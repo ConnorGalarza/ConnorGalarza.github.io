@@ -1,3 +1,172 @@
 body{
-    background-color: aqua;
+    font-family: 'Josefin+Sans&display', sans-serif;
+    text-shadow: 3px 2px 0px rgba(0,0,0,0.2);
 }
+
+
+.flex-containerN{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #202020;
+    height: 60px;
+    color: aliceblue;
+    font-family: 'Josefin+Sans&display', sans-serif; 
+    font-weight: bold; 
+    border-radius: 1em;
+    
+}
+
+.flex-containerN > div{
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: aliceblue;
+    
+}
+a:hover{
+    color: black;
+}
+
+
+
+html{
+   scroll-behavior: smooth; 
+}
+    
+
+.flex-container{
+    height: 500px;
+
+    
+    background-image: url(setup.jpg);
+    background-position: 50%;
+    
+}
+
+.containerN{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Josefin+Sans&display', sans-serif;
+    font-weight: bold;
+
+}
+
+.flex-container1 > h2, h4{
+    color: #202020;    
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.flex-container1 > p, ul{
+    font-weight: bold;
+}
+.container1 > p{
+    font-family: 'Josefin+Sans&display', sans-serif;
+    font-weight: bold;
+}
+
+
+.flex-container1{
+    height: 400px;
+}
+
+.flex-container2 > h2, h3{
+    color: aliceblue;    
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.flex-container2{
+    background-color: #202020;
+    height: 550px;
+}
+
+.flex-container3{
+    height: 200px;
+}
+
+.flex-container3 > h2{
+    color: #202020;    
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2,h3,h4{
+    text-align: center;
+    padding: 20px;
+}
+
+.container1{
+    background-color: blueviolet;
+    padding: 30px;
+    color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 10px 10px gray;
+    
+}
+
+
+.container{
+    display: grid;
+        grid-template-areas:
+        "content1 content2"
+        "content1 content2"
+        "content1 content2";
+        
+        
+        grid-gap: 115px;
+}
+
+#column2, #column6
+{
+    text-align: center;
+    padding-left: 200px;
+}
+#column1 > h4{
+    color: #202020;    
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:50px;
+    padding-top: 15px;
+    width:100%;
+    text-align: center;
+    color: white;
+    background: #202020;
+    font-family: 'Josefin+Sans&display', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 569px)
+{
+    .container{
+        grid-template-areas: 
+        "content1"
+        "content2"
+    }
+    .flex-container1, .flex-container2, .flex-container3{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .containerN{
+        padding-top: 80px;
+    }
+   
+}
+
+
+    
+
